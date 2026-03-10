@@ -1,0 +1,7 @@
+2026-03-02 10:01:02 [INFO] Display: Backlight initialized
+2026-03-02 10:01:03 [WARNING] Display: Brightness unstable
+2026-03-02 10:01:05 [ERROR] Display: Backlight timeout
+2026-03-02 10:01:07 [INFO] Power: Voltage normal
+2026-03-02 10:01:08 [ERROR] Power: Voltage drop detected
+2026-03-02 10:01:09 [INFO] Animation: Fade started
+2026-03-02 10:01:10 [ERROR] Animation: Fade failed

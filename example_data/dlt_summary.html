@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DLT Log Summary</title>
+    <style>
+        table {border-collapse: collapse; width: 60%; margin: 20px;}
+        th, td {border: 1px solid black; padding: 8px; text-align: center;}
+        th {background-color: #f2f2f2;}
+        .ERROR {background-color: #f8d7da;}      /* red-ish for errors */
+        .WARNING {background-color: #fff3cd;}    /* yellow-ish for warnings */
+        .INFO {background-color: #d1e7dd;}       /* green-ish for info */
+    </style>
+</head>
+<body>
+    <h2>DLT Log Summary per Module</h2>
+    <table>
+        <tr>
+            <th>Module</th><th>INFO</th><th>WARNING</th><th>ERROR</th>
+        </tr>
+
+        <tr>
+            <td>Display</td>
+            <td class="INFO">1</td>
+            <td class="WARNING">1</td>
+            <td class="ERROR">1</td>
+        </tr>
+
+        <tr>
+            <td>Power</td>
+            <td class="INFO">1</td>
+            <td class="WARNING">0</td>
+            <td class="ERROR">1</td>
+        </tr>
+
+        <tr>
+            <td>Animation</td>
+            <td class="INFO">1</td>
+            <td class="WARNING">0</td>
+            <td class="ERROR">1</td>
+        </tr>
+
+    </table>
+</body>
+</html>
