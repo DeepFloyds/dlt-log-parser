@@ -1,4 +1,5 @@
 import html
+import csv
 from pathlib import Path
 from dataclasses import dataclass
 
@@ -99,3 +100,28 @@ def export_summary_to_html(summary: dict, path: Path):
     # Write to file
     with path.open("w", encoding="utf-8") as f:
         f.write(html_content)    
+        
+        
+        
+        
+ 
+def export_summary_to_csv(summary: dict, path: Path):
+    """
+    Export summary to CSV file.
+    Each row = one module
+    """
+    fieldnames = ["Module", "INFO", "WARNING", "ERROR"]
+
+    with path.open("w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+
+        writer.writeheader()
+
+        for module, counts in summary.items():
+            row = {
+                "Module": module,
+                "INFO": counts["INFO"],
+                "WARNING": counts["WARNING"],
+                "ERROR": counts["ERROR"]
+            }
+            writer.writerow(row) 
